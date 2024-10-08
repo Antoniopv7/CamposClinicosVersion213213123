@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Gestión del Presupuesto</title>
+    <link rel="stylesheet" href="~/css/site.css" /> <!-- Este es el CSS principal -->
+    <link rel="stylesheet" href="~/css/styles.css" /> <!-- Aquí se añade el nuevo CSS -->
+</head>
+<body>
+    <div class="container">
+        <!-- Aquí se añade el logo -->
+        <div class="logo-container text-left">
+            <img src="~/images/ucn_logo.jpg" alt="Logo Universidad Central" class="logo" /> <!-- Ajusta la ruta a tu logo -->
+        </div>
+        @RenderBody() <!-- Esto renderiza el cuerpo de las vistas que usan este layout -->
+    </div>
+</body>
+</html>
+
+
+

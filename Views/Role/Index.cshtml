@@ -1,0 +1,23 @@
+﻿@model List<Gestion_Del_Presupuesto.Models.RoleViewModel>
+
+@{
+    ViewData["Title"] = "Lista de Roles";
+}
+
+<h2>Roles Disponibles</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Rol</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var role in Model)
+        {
+            <tr>
+                <td>@role.RoleName</td>
+            </tr>
+        }
+    </tbody>
+</table>
